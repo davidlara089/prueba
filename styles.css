@@ -601,3 +601,27 @@ body.modo-noche .btn:hover {
 }
 
 /*ocultar scroll*/
+/* Estilo para ocultar el contenido del header al hacer scroll en modo responsive */
+@media (max-width: 768px) {
+    .header.sticky .container h1,
+    .header.sticky .container p {
+        display: none;
+    }
+
+    .header .container {
+        height: 100px; /* Ajustar tamaño del contenedor del header en modo responsive */
+    }
+
+    .header.sticky .container {
+        height: 50px; /* Tamaño del contenedor del header al hacer scroll en modo responsive */
+    }
+}
+
+.header {
+    transition: all 0.3s ease;
+}
+
+.header.sticky {
+    background-color: rgba(255, 255, 255, 0.9); /* Color de fondo del header al hacer scroll */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra del header al hacer scroll */
+}
